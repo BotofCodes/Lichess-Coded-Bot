@@ -50,7 +50,7 @@ engine:                      # Engine settings.
 
 abort_time: 30               # time to abort a game in seconds when there is no activity
 fake_think_time: false       # artificially slow down the bot to pretend like it's thinking
-Move Overhead: 900           # Increase if your bot flags games too often.
+Move Overhead: 1500           # Increase if your bot flags games too often.
 challenge:                   # incoming challenges
   concurrency: 1             # number of games to play simultaneously
   sort_by: "best"            # possible values: "best", "first"
