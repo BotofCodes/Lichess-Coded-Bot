@@ -26,11 +26,11 @@ engine:                      # Engine settings.
 # engine_options:            # Any custom command line params to pass to the engine.
 #   cpuct: 3.1
   homemade_options:
-#   Hash: 256  
+    Hash: 128  
   uci_options:               # Arbitrary UCI options passed to the engine.
     Move Overhead: 400       # Increase if your bot flags games too often.
     Threads: 16              # Max CPU threads the engine can use.
-    Hash:  256               # Max memory (in megabytes) the engine can allocate.
+    Hash:  128               # Max memory (in megabytes) the engine can allocate.
 #   go_commands:             # Additional options to pass to the UCI go command.
 #     nodes: 1               # Search so many nodes only.
 #     depth: 5               # Search depth ply only.
@@ -50,11 +50,11 @@ engine:                      # Engine settings.
 
 abort_time: 30               # time to abort a game in seconds when there is no activity
 fake_think_time: false       # artificially slow down the bot to pretend like it's thinking
-Move Overhead: 1700           # Increase if your bot flags games too often.
+Move Overhead: 1100          # Increase if your bot flags games too often.
 challenge:                   # incoming challenges
   concurrency: 1             # number of games to play simultaneously
   sort_by: "best"            # possible values: "best", "first"
-  accept_bot: true          # accepts challenges coming from other bots
+  accept_bot: true           # accepts challenges coming from other bots
   only_bot: false            # accept challenges by bots only
   max_increment: 180         # maximum amount of increment to accaept a challenge. the max is 180. set to 0 for no increment
   min_increment: 0           # minimum amount of increment to accept a challenge
