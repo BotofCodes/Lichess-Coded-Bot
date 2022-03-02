@@ -28,9 +28,9 @@ engine:                      # Engine settings.
   homemade_options:
 #   Hash: 256  
   uci_options:               # Arbitrary UCI options passed to the engine.
-    Move Overhead: 300       # Increase if your bot flags games too often.
-    Threads: 4               # Max CPU threads the engine can use.
-    Hash: 128                # Max memory (in megabytes) the engine can allocate.
+    Move Overhead: 400       # Increase if your bot flags games too often.
+    Threads: 16              # Max CPU threads the engine can use.
+    Hash: 1256               # Max memory (in megabytes) the engine can allocate.
 #   go_commands:             # Additional options to pass to the UCI go command.
 #     nodes: 1               # Search so many nodes only.
 #     depth: 5               # Search depth ply only.
@@ -46,11 +46,11 @@ engine:                      # Engine settings.
 #   go_commands:             # Additional options to pass to the XBoard go command.
 #     depth: 5               # Search depth ply only.
 #     Do note that the go commands 'movetime' and 'nodes' are invalid and may cause bad time management for XBoard engines.
-  silence_stderr: false      # Some engines (yes you, Leela) are very noisy.
+# silence_stderr: false      # Some engines (yes you, Leela) are very noisy.
 
 abort_time: 30               # time to abort a game in seconds when there is no activity
 fake_think_time: false       # artificially slow down the bot to pretend like it's thinking
-Move Overhead: 1500           # Increase if your bot flags games too often.
+Move Overhead: 1700           # Increase if your bot flags games too often.
 challenge:                   # incoming challenges
   concurrency: 1             # number of games to play simultaneously
   sort_by: "best"            # possible values: "best", "first"
